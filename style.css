@@ -1,29 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
+:root {
+  --merlin-50: #f7f7f6;
+  --merlin-100: #e5e4e2;
+  --merlin-200: #cbc7c4;
+  --merlin-300: #a9a49f;
+  --merlin-400: #87807a;
+  --merlin-500: #6c6660;
+  --merlin-600: #56504b;
+  --merlin-700: #46423e;
+  --merlin-800: #3b3734;
+  --merlin-900: #33302e;
+  --merlin-950: #1b1a18;
+  --purple-heart-50: #eeeeff;
+  --purple-heart-100: #e2e1fe;
+  --purple-heart-200: #c9c8fd;
+  --purple-heart-300: #aaa6fb;
+  --purple-heart-400: #9283f6;
+  --purple-heart-500: #8165ef;
+  --purple-heart-600: #7349e2;
+  --purple-heart-700: #6137c3;
+  --purple-heart-800: #5232a1;
+  --purple-heart-900: #442f80;
+  --purple-heart-950: #291c4a;
+  --cod-gray-50: #f7f6f6;
+  --cod-gray-100: #e5e2e3;
+  --cod-gray-200: #cac5c6;
+  --cod-gray-300: #a7a1a2;
+  --cod-gray-400: #847d7e;
+  --cod-gray-500: #6a6263;
+  --cod-gray-600: #544d4e;
+  --cod-gray-700: #454040;
+  --cod-gray-800: #393636;
+  --cod-gray-900: #322f2f;
+  --cod-gray-950: #0d0c0c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
-  background-color: black;
+  background-color: var(--cod-gray-950);
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  /* height: 100vh; */
 }
 
 .playlist-container {
-  background-color: gray;
-  height: 850px;
+  background-color: var(--cod-gray-950);
   width: 400px;
+  height: 100vh;
   overflow: auto;
   display: flex;
   flex-direction: column;
 }
 
 .header {
-  height: 150px;
-  width: 1440px;
-  background-color: rgb(0, 0, 0);
+  height: 60px;
+  background-color: var(--merlin-950);
   display: flex;
   justify-content: left;
   align-items: center;
+  padding-inline: 20px;
 }
 
 #playlisty {
-  color: seashell;
+  color: var(--purple-heart-100);
 }
 
 .container {
@@ -34,6 +82,24 @@ html {
   cursor: pointer;
 }
 
+.side-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 1rem;
+  margin: 3px;
+  background-color: var(--purple-heart-950);
+  color: var(--merlin-50);
+  cursor: pointer;
+  font-size: small;
+  backdrop-filter: "blur";
+}
+
+.side-thumb > img {
+  object-fit: cover;
+}
+
 .playlist-url {
   height: 40px;
   width: 400px;
@@ -42,13 +108,19 @@ html {
   border: none;
   outline: none;
   margin: 20px;
+  background-color: var(--cod-gray-900);
+  color: var(--cod-gray-50);
+  padding-inline: 15px;
 }
 
 #btn {
   height: 40px;
-  width: 50px;
+  padding-inline: 2rem;
   border-radius: 10px;
   border: none;
   cursor: pointer;
   font-size: 20px;
+  background-color: var(--purple-heart-500);
+  color: var(--cod-gray-50);
+  font-weight: bold;
 }
