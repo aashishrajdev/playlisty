@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Playlisty</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://apis.google.com/js/api.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 id="playlisty">Playlisty</h1>
+      <input placeholder="Enter playlist URL" class="playlist-url" />
+      <button id="btn" onclick="loadClient().then(execute)">GET</button>
+    </div>
+    <div class="container">
+      <div class="playlist-container">
+        <h3 id="playlist-title"></h3>
+        <img id="playlist-thumbnail"/ alt="">
+      </div>
+      <iframe
+        id="video"
+        width="1440 "
+        height="850"
+        src=""
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

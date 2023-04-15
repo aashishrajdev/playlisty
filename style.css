@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.playlist-container {
+  background-color: gray;
+  height: 850px;
+  width: 400px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 150px;
+  width: 1440px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#playlisty {
+  color: seashell;
+}
+
+.container {
+  display: flex;
+}
+
+#playlist-thumbnail {
+  cursor: pointer;
+}
+
+.playlist-url {
+  height: 40px;
+  width: 400px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  margin: 20px;
+}
+
+#btn {
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
