@@ -2,7 +2,7 @@
 
 Playlisty is a playlist app that allows users to create and organize YouTube video playlists based on their preferences. It is specifically targeted towards students who often face distractions during online lectures and provides an isolated platform for them to curate useful video lessons without any distractions.
 
-This project is the part of nights and weekends S3 project at [buildspace](https://buildspace.so).
+This project is the part of nights and weekends S3 at [buildspace](https://buildspace.so).
 
 ![playlisty](https://cdn.discordapp.com/attachments/1094711716262195241/1096550061665693868/erevald.png)
 
