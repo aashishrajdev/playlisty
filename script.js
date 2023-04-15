@@ -43,7 +43,7 @@ function createPlaylist(response) {
   const playlistData = playlistItems.map((item) => {
     return {
       title: item.snippet.title,
-      thumbnailUrl: item.snippet.thumbnails.medium.url,
+      thumbnailUrl: item.snippet.thumbnails.default.url,
       videoId: item.snippet.resourceId.videoId,
     };
   });
@@ -55,6 +55,7 @@ function createPlaylist(response) {
 
     // Create a new <div> element to hold the playlist information
     const playlistElement = document.createElement("div");
+    playlistElement.setAttribute("class","side-thumb")
     playlistElement.classList.add("playlist");
 
     // Create a new <img> element to display the thumbnail
@@ -81,7 +82,5 @@ function changeVideo(videoId) {
   const videoEl = document.querySelector("#video");
   videoEl.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
 }
-
-// https://www.youtube.com/embed/hUUZbgOPFLY?autoplay=1&rel=0
 
 gapi.load("client");
